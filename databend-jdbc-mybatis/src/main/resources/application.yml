@@ -1,0 +1,12 @@
+
+spring:
+  datasource:
+    driverClassName: com.databend.jdbc.DatabendDriver
+    url: jdbc:databend://localhost:8000/springbootdemo
+    username: databend
+    password: databend
+
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
